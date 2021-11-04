@@ -1,3 +1,7 @@
 h1 {
   color: blue;
 }
+.container {
+  display: block;
+  margin: 0 auto;
+}
