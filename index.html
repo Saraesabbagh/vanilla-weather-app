@@ -13,11 +13,97 @@
     <title>Vanilla Weather app</title>
   </head>
   <body>
-    <div class="container"
-        <h1> 
-        Hello World
-        </h1>
+    <div class="container" id="whole page"
+       <form class="askCity" id="enter-city-form">
+                <input type="text" placeholder="Enter a city" id="city-input"/>
+                <input type="submit" value="Search" class="button"/>    
+            </form>
         <a href="" class="btn btn-primary">Click Me</a>
+    
+        <div class="container" id="current-city-weather">
+
+        <div class="row align-items-start">
+            <div class="col-4">
+                <h1 id="city-name">
+                New York
+                </h1>
+                <ul>
+                    <li id="day">Friday</li>
+                    <li id="time">10:00</li>
+                    <li id= "humidity">50%</li>
+                </ul>
+            </div>
+        
+        <div class="col-4">
+        <h1 id="current-temperature">9°C</h1>
+        <div> </div>
+        <div id="weather-description">Clear skies</div>
+        <div id="current-weather-description-icon">☁ </div>
+        </div>
+        
+    </div>
+<div class="container" id="upcoming-city-weather">
+
+        <div class="row align-items-start">
+            <div class="col-2">
+                <ul>
+                    <li id="curent-day">Fri</li>
+                    <li id="current-day-icon"> 🌞 </li>
+                    <li>
+                        <span id="current-day-max-temp">11°</span>
+                        <span id="current-day-min-temp">6°</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul>
+                    <li id="curent-day+1">Sat</li>
+                    <li id="current-day+1-icon"> 🌞 </li>
+                    <li>
+                        <span id="current-day+1-max-temp">11°</span>
+                        <span id="current-day+1-min-temp">6°</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-2">
+                <ul>
+                    <li id="curent-day+2">Sun</li>
+                    <li id="current-day+2-icon"> 🌞 </li>
+                    <li>
+                        <span id="current-day+2-max-temp">11°</span>
+                        <span id="current-day+2-min-temp">6°</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul>
+                    <li id="curent-day+3">Mon</li>
+                    <li id="current-day+3-icon"> 🌞 </li>
+                    <li>
+                        <span id="current-day+3-max-temp">11°</span>
+                        <span id="current-day+3-min-temp">6°</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-2">
+                <ul>
+                    <li id="curent-day+4">Tues</li>
+                    <li id="current-day+4-icon"> 🌞 </li>
+                    <li>
+                        <span id="current-day+4-max-temp">11°</span>
+                        <span id="current-day+4-min-temp">6°</span>
+                    </li>
+                </ul>
+            </div>
+        
+        </div>
+    </div>
+
+    </div>
+
+    <div>This project is coded by Sara Sabbagh and is opened source on Github and hosted on netlify</div>
   </div>
     <script src="src/app.js"></script>
   </body>
