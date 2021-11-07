@@ -14,30 +14,43 @@
     <div class="container" id="whole-page"
        
         
-        <form class="form" id="search-form">
+        <form id="search-form" class="mb-3">
             <div class="row">
                 <div class="col-9">
                     <input type="search" placeholder="Type a city.." Class="form-control" id="city-input"/>
                 </div>
                 <div class="col-3">
-                    <input type="submit" value="Search"/>
+                    <input type="submit" value="Search" class="btn btn-primary w-100"/>
                 </div>
-        </div>
+            </div>
         </form>
     
         <div class="container" id="current-city-weather">
 
         <div class="row align-items-start">
             <div class="col-6">
-                <h1 id="city-name">
-                
-                </h1>
+                <h1 id="city-name"></h1>
                 <ul>
                     <li>
                         <span>Last updated:</span>
                         <span id="date">Friday 10:00</span>
                     </li>
-                    <li >
+                    <li id="weather-description">Clear skies</li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    <div class="row">
+        <div class="col-6">
+            <img id="current-weather-description-icon" src="" alt="clear" />
+            <span  id="current-temperature"><strong>9°C</strong></span> 
+            <span class="units" id="celsius">°C|</span>
+            <span class="units" id="fahrenheit"><a href="#">°F</a></span>
+            
+        </div>
+        <div class="col-6">
+           <ul> <li >
                         <span>Humidity:</span>
                         <span id= "humidity">50</span> 
                         <span>%</span>
@@ -49,26 +62,8 @@
                         <span>km/hr</span>
                     
                     </li>
-                </ul>
-            </div>
-         <div class="col-2"id="current-card">
-        <h1 id="current-temperature">9°C</h1> 
-            
-    
-        
-        
-        
-    </div>
-        <div class="col-4">
-            <div></div>
-        <span id="celsius">°C</span>
-        <span id="fahrenheit"><a href="#">°F</a></span>
-            <img id="current-weather-description-icon" src="" alt="clear" />
-            <div id="weather-description">Clear skies</div>
-        
-    </div>
-   
-       
+            </ul>
+        </div>
     </div>
 
 <div class="container" id="upcoming-city-weather">
