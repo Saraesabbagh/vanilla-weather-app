@@ -12,11 +12,18 @@
   </head>
   <body>
     <div class="container" id="whole-page"
-       <form class="askCity" id="enter-city-form">
-                <input type="text" placeholder="Enter a city" id="city-input"/>
-                <input type="submit" value="Search" class="button"/>    
-            </form>
-        <a href="" class="btn btn-primary">Click Me</a>
+       
+        
+        <form class="form" id="search-form">
+            <div class="row">
+                <div class="col-9">
+                    <input type="search" placeholder="Type a city.." Class="form-control" id="city-input"/>
+                </div>
+                <div class="col-3">
+                    <input type="submit" value="Search"/>
+                </div>
+        </div>
+        </form>
     
         <div class="container" id="current-city-weather">
 
@@ -44,18 +51,23 @@
                     </li>
                 </ul>
             </div>
-        
-        <div class="col-3">
-        <h1 >
-            <img id="current-weather-description-icon" src="" alt="clear" />
-            </h1>
-        
-    </div>
-    <div class="col-3"id="current-card">
+         <div class="col-2"id="current-card">
         <h1 id="current-temperature">9°C</h1> 
-        <div id="weather-description">Clear skies</div>
+            
+    
+        
+        
         
     </div>
+        <div class="col-4">
+            <div></div>
+        <span id="celsius">°C</span>
+        <span id="fahrenheit"><a href="#">°F</a></span>
+            <img id="current-weather-description-icon" src="" alt="clear" />
+            <div id="weather-description">Clear skies</div>
+        
+    </div>
+   
        
     </div>
 
