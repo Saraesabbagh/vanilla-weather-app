@@ -11,7 +11,7 @@
     <title>Vanilla Weather app</title>
   </head>
   <body>
-    <div class="container" id="whole-page">
+    <div class="containerPage" id="whole-page">
         <form id="search-form" class="mb-3">
             <div class="row">
                 <div class="col-9">
@@ -41,7 +41,7 @@
         
     <div class="row">
         <div class="col-6">
-            <img id="current-weather-description-icon" src=" " alt="clear" />
+            <img id="current-weather-description-icon" src=" " alt="" />
             <span  id="current-temperature"><strong>9°C</strong></span> 
             <span class="units" id="celsius"><a href="#" id="c-link" class="active">°C</a>|</span>
             <span class="units" id="fahrenheit"><a href="#" id="f-link" class="active">°F</a></span>
@@ -55,7 +55,7 @@
                     
                     </li>
                     <li >
-                        <span>Wind Speed</span>
+                        <span>Wind Speed:</span>
                         <span id="wind-speed">5</span>
                         <span>km/hr</span>
                     
@@ -81,8 +81,13 @@
 
     </div>
 
-    <div><small>This project is coded by Sara Sabbagh and is <a href= "https://github.com/Saraesabbagh/vanilla-weather-app" target="_blank" >opened source on Github </a>and hosted on <a href="https://boring-mayer-f15fe1.netlify.app" target="_blank">netlify</a></small></div>
-  </small></div>
-    <script src="src/app.js"></script>
+   <div id="small-print"><small>This project is coded by Sara Sabbagh and is <a href= "https://github.com/Saraesabbagh/vanilla-weather-app" target="_blank" >opened source on Github </a>and hosted on <a href="https://boring-mayer-f15fe1.netlify.app" target="_blank">netlify</a></small></div>
+  </small>
+
+</div>
+    <script src="src/app.js"></script> 
+    
+    
   </body>
+  
 </html>

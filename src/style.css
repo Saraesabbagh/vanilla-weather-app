@@ -1,15 +1,8 @@
-.vanilla-weather-app {
-  max-width: 600px;
-  border: 1px solid;
-}
-
-body {
-}
-
 h1 {
   margin-bottom: 0;
   color: grey;
 }
+
 #whole-page {
   max-width: 540px;
   min-width: 540px;
@@ -68,4 +61,8 @@ ul {
 
 #upcoming-city-weather {
   font-size: 16px;
+}
+
+#small-print {
+  padding-top: 50px;
 }
