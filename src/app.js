@@ -30,6 +30,9 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind-speed");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#current-weather-description-icon");
+
+  ceslsiusTemperature = response.data.main.temp;
+
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
@@ -56,5 +59,31 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+function displayFahrenheitTemp(event) {
+  event.preventDefault();
+  let farenheitTemp = (ceslsiusTemperature * 9) / 5 + 32;
+  clink.classList.remove("active");
+  flink.classList.add("active");
+  let temperatureElement = document.querySelector("#current-temperature");
+  temperatureElement.innerHTML = Math.round(farenheitTemp);
+}
+
+function displaycelsiusTemp(event) {
+  event.preventDefault();
+  let celsiustemp = ceslsiusTemperature;
+  clink.classList.add("active");
+  flink.classList.remove("active");
+  let temperatureElement = document.querySelector("#current-temperature");
+  temperatureElement.innerHTML = Math.round(celsiustemp);
+}
+
+let ceslsiusTemperature = null;
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let flink = document.querySelector("#f-link");
+flink.addEventListener("click", displayFahrenheitTemp);
+
+let clink = document.querySelector("#c-link");
+clink.addEventListener("click", displaycelsiusTemp);
