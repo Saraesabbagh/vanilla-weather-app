@@ -65,3 +65,7 @@ ul {
 .active:hover {
   text-decoration: none;
 }
+
+#upcoming-city-weather {
+  font-size: 16px;
+}

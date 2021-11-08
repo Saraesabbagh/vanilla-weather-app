@@ -22,6 +22,27 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Mon", "Tues", "Wed", "Thu"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+         <div class="col-2">
+                <div id="weather-forecast-date">${day}</div>
+                     <img src="#" id="current-day-icon"/>
+                    <div class="weather-forecast-temperatures">
+                        <span id="weather-forecast-max-temperature">11°</span>
+                        <span id="weather-forecast-min-temperature">6°</span>
+                    </div>
+            </div>`;
+  });
+  forecastHTML = forecastHTML + `</div`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   let cityElement = document.querySelector("#city-name");
@@ -87,3 +108,5 @@ flink.addEventListener("click", displayFahrenheitTemp);
 
 let clink = document.querySelector("#c-link");
 clink.addEventListener("click", displaycelsiusTemp);
+
+displayForecast();
